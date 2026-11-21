@@ -1,0 +1,18 @@
+syntax = "proto3";
+package kopala.v1;
+
+service Health {
+  rpc Check(CheckRequest) returns (CheckResponse);
+}
+
+message CheckRequest {}
+
+message CheckResponse {
+  enum ServingStatus {
+    SERVING_STATUS_UNSPECIFIED = 0;
+    SERVING_STATUS_STARTING = 1;
+    SERVING_STATUS_SERVING = 2;
+    SERVING_STATUS_NOT_SERVING = 3;
+  }
+  ServingStatus status = 1;
+}
