@@ -29,3 +29,6 @@ target_link_libraries(proto_smoke PRIVATE kopala_proto)
 
 add_executable(kopala_agent agent/main.cpp)
 target_link_libraries(kopala_agent PRIVATE kopala_proto)
+
+add_executable(kopala_client client/main.cpp)
+target_link_libraries(kopala_client PRIVATE kopala_proto)

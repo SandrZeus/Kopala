@@ -16,3 +16,6 @@ smoke: build
 
 agent: build
     ./build/dev/kopala_agent
+
+client: build
+    ./build/dev/kopala_client
