@@ -11,11 +11,8 @@ configure:
 build:
     cmake --build build/dev
 
-smoke: build
-    ./build/dev/proto_smoke
-
 agent: build
-    ./build/dev/kopala_agent
+    ./build/dev/bin/kopala_agent
 
 client: build
-    ./build/dev/kopala_client
+    ./build/dev/bin/kopala_client
