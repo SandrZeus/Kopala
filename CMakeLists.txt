@@ -26,3 +26,6 @@ protobuf_generate(
 
 add_executable(proto_smoke tools/proto_smoke.cpp)
 target_link_libraries(proto_smoke PRIVATE kopala_proto)
+
+add_executable(kopala_agent agent/main.cpp)
+target_link_libraries(kopala_agent PRIVATE kopala_proto)

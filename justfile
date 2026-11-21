@@ -13,3 +13,6 @@ build:
 
 smoke: build
     ./build/dev/proto_smoke
+
+agent: build
+    ./build/dev/kopala_agent
